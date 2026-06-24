@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Oviaria AI Assessment
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/assessment.css"
+    >
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <div>
+
+            <h1>
+                Oviaria AI - PCOD/PCOS Risk Assessment
+            </h1>
+
+            <p>
+                Please provide accurate information for better AI prediction and personalized recommendations.
+            </p>
+
+        </div>
+
+        <div class="user-profile">
+
+            <img
+                src="assets/profile.png"
+                alt="Profile"
+            >
+
+            <div class="dropdown">
+
+                <span id="userName">
+                    User ▼
+                </span>
+
+                <div class="dropdown-content">
+
+                    <p id="userEmail">
+                        user@gmail.com
+                    </p>
+
+                    
+                    <a href="#" id="logoutBtn">
+                        Logout
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BASIC INFORMATION -->
+
+    <div class="card">
+
+        <div class="section-title">
+
+            1 Basic Information
+
+        </div>
+
+        <div class="basic-grid">
+
+    <div>
+
+        <label>
+            Age (yrs)
+        </label>
+
+        <input
+            type="number"
+            id="age"
+            value="0"
+        >
+
+    </div>
+
+    <div>
+
+        <label>
+            Pulse Rate (bpm)
+        </label>
+
+        <input
+            type="number"
+            id="pulseRate"
+            value="72"
+        >
+
+    </div>
+
+    <div>
+
+        <label>
+            Weight (Kg)
+        </label>
+
+        <input
+            type="number"
+            id="weight"
+            value="0"
+        >
+
+    </div>
+
+    <div>
+
+        <label>
+            Height (Cm)
+        </label>
+
+        <input
+            type="number"
+            id="height"
+            value="0"
+        >
+
+    </div>
+
+    <div class="bmi-card">
+
+        <h3>BMI</h3>
+
+        <h2 id="bmiValue">
+            0.0
+        </h2>
+
+        <p>
+            Auto Calculated
+        </p>
+
+    </div>
+
+</div>
+
+    </div>
+
+    <!-- REPRODUCTIVE -->
+
+    <div class="card">
+
+        <div class="section-title">
+
+            2 Reproductive Information
+
+        </div>
+
+        <div class="grid-3">
+
+            <div>
+
+                <label>
+                    Cycle (Irregularity)
+                </label>
+
+                <select id="cycle">
+
+                    <option>Select</option>
+                    <option>Regular</option>
+                    <option>Irregular</option>
+
+                </select>
+
+            </div>
+
+            <div>
+
+                <label>
+                    Cycle Length (days)
+                </label>
+
+                <input
+                    type="number"
+                    value="0"
+                    id="cycleLength"
+                >
+
+            </div>
+
+            <div>
+
+                <label>
+                   Marriage Status (Yrs)
+                </label>
+
+                <input
+                    type="number"
+                    value="0"
+                    id="marriage"
+                >
+
+            </div>
+
+            <div>
+
+                <label>
+                    Pregnant
+                </label>
+
+                <select id="pregnant">
+
+                    <option>Select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+
+                </select>
+
+            </div>
+
+            <div>
+
+                <label>
+                    Number of Abortions
+                </label>
+
+                <input
+                    type="number"
+                    value="0"
+                    id="abortions"
+                >
+
+            </div>
+
+            <div>
+
+                <label>
+                    Hip (inch)
+                </label>
+
+                <input
+                    type="number"
+                    value="0"
+                    id="hip"
+                >
+
+            </div>
+
+            <div>
+
+                <label>
+                    Waist (inch)
+                </label>
+
+                <input
+                    type="number"
+                    value="0"
+                    id="waist"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- LIFESTYLE -->
+
+    <div class="card">
+
+        <div class="section-title">
+
+            3 Lifestyle Information
+
+        </div>
+
+        <div class="grid-2">
+
+            <div class="row">
+                <label>Weight Gain</label>
+                <select id="weightGain">
+                    <option>Select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Pimples</label>
+                <select id="pimples">
+                    <option>Select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Hair Growth</label>
+                <select id="hairGrowth">
+                    <option>Select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Fast Food Consumption</label>
+                <select id="fastFood">
+                    <option>Select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Skin Darkening</label>
+                <select id="skinDarkening">
+                    <option>Select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Regular Exercise</label>
+                <select id="exercise">
+                    <option>Select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Hair Loss</label>
+                <select id="hairLoss">
+                    <option>Select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Sleep Duration (hours)</label>
+                <input
+                    type="number"
+                    value="0"
+                    id="sleep"
+                >
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BUTTON -->
+
+    <button
+        class="predict-btn"
+        id="predictBtn"
+    >
+        Predict Condition
+    </button>
+
+</div>
+
+<script type="module" src="js/assessment.js"></script>
+
+</body>
+</html>

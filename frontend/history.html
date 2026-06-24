@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction History | Oviaria AI</title>
+
+    <link rel="stylesheet" href="css/history.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="topbar">
+
+        <div class="logo-section">
+            <img src="assets/logo.png" alt="Logo">
+            <h2>Oviaria AI</h2>
+        </div>
+
+        <div class="user-section">
+
+            <img src="assets/profile.png"
+                class="profile-img">
+
+            <span id="userEmail">
+                user@gmail.com
+            </span>
+
+            <button id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <div>
+            <h1>Prediction History</h1>
+
+            <p>
+                View and manage all your previous PCOS / PCOD prediction reports.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Stats -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <div class="icon-circle">
+                <i class="fa-solid fa-file-lines"></i>
+            </div>
+
+            <div>
+                <h3>Total Reports</h3>
+                <h2 id="totalReports">0</h2>
+                <p>Reports generated</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Search -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by condition or date..."
+            >
+        </div>
+
+    </section>
+
+    <!-- Reports -->
+
+    <section class="reports-section">
+
+        <h2>Your Reports</h2>
+
+        <div id="historyContainer">
+
+            <!-- Firestore cards appear here -->
+
+        </div>
+
+    </section>
+
+<div class="history-footer">
+
+    <div>
+        <h3>Stay consistent with your health routine.</h3>
+        <p>
+            Regular monitoring and healthy lifestyle choices can make a big difference.
+        </p>
+    </div>
+
+    <button id="newAssessmentBtn">
+        Take New Assessment →
+    </button>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script type="module" src="js/history.js"></script>
+
+
+
+
+</body>
+
+</html>
