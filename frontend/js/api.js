@@ -3,7 +3,7 @@ async function submitForm(userData) {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:5000/predict",
+            "http://oviaria-ai-2.onrender.com",
             {
                 method: "POST",
                 headers: {
