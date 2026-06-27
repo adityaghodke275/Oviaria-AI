@@ -129,7 +129,7 @@ document
             };
 
             const response = await fetch(
-                "https://oviaria-ai-2.onrender.com",
+                "https://oviaria-ai-2.onrender.com/predict",
                 {
                     method: "POST",
                     headers: {
@@ -146,7 +146,7 @@ document
                 JSON.stringify(result)
             );
 
-            window.location.href = "Result.html";
+            window.location.href = "result.html";
 
         } catch (error) {
 
@@ -188,5 +188,5 @@ logoutBtn?.addEventListener("click", function (e) {
     sessionStorage.clear();
     localStorage.clear();
 
-    window.location.href = "Login.html";
+    window.location.href = "index.html";
 });

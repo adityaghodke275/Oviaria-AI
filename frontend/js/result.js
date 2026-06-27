@@ -259,7 +259,7 @@ sessionStorage.clear();
 localStorage.clear();
 
 window.location.href =
-"Login.html";
+"index.html";
 
 
 }
