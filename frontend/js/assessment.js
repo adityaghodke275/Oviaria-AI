@@ -129,7 +129,7 @@ document
             };
 
             const response = await fetch(
-                "http://oviaria-ai-2.onrender.com",
+                "https://oviaria-ai-2.onrender.com",
                 {
                     method: "POST",
                     headers: {
